@@ -1,0 +1,58 @@
+
+$color-purple: #800080;
+$color-darkpurple: #3b003b;
+$color-h2: #fec066;
+$color-white: #ffffff;
+
+$margin-nav: 45px;
+
+body {
+    background-color: $color-purple;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: $color-darkpurple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & h2, li {
+        cursor: pointer;
+    }
+    & h2{
+        color: $color-h2;
+        margin-left: $margin-nav;
+    }
+    & ul {
+        display: flex;
+        margin-right: $margin-nav;
+    }
+    & li {
+        color: $color-white;
+        list-style: none;
+        margin-left: 8px;
+        padding: 0;
+    }
+}
+
+
+.hero {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & .hero--image {
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        & img {
+            width: 22%;
+            margin: auto;
+        }
+    }
+}

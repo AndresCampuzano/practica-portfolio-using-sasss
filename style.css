@@ -1,0 +1,49 @@
+body {
+  background-color: #800080;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background-color: #3b003b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h2, nav li {
+  cursor: pointer;
+}
+nav h2 {
+  color: #fec066;
+  margin-left: 45px;
+}
+nav ul {
+  display: flex;
+  margin-right: 45px;
+}
+nav li {
+  color: #ffffff;
+  list-style: none;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .hero--image {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.hero .hero--image img {
+  width: 22%;
+  margin: auto;
+}
