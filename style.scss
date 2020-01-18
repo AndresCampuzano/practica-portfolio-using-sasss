@@ -3,8 +3,9 @@ $color-purple: #800080;
 $color-darkpurple: #3b003b;
 $color-h2: #fec066;
 $color-white: #ffffff;
+$color-textshadow: #240842;
 
-$margin-nav: 45px;
+$margin: 45px;
 
 body {
     background-color: $color-purple;
@@ -25,11 +26,11 @@ nav {
     }
     & h2{
         color: $color-h2;
-        margin-left: $margin-nav;
+        margin-left: $margin;
     }
     & ul {
         display: flex;
-        margin-right: $margin-nav;
+        margin-right: $margin;
     }
     & li {
         color: $color-white;
@@ -46,7 +47,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    & .hero--image {
+    &--image {
         width: 100%;
         display: flex;
         margin-top: 20px;
@@ -55,4 +56,53 @@ nav {
             margin: auto;
         }
     }
+    &--title {
+        width: 100%;
+    }
+    &--title h1 {
+        color: $color-white;
+        text-align: center;
+        text-shadow: 1px 0px 3px $color-textshadow;
+        font-size: 2.2em;
+    }
 }
+
+.experience--title {
+    width: 100%;
+    & h2 {
+        text-transform: uppercase;
+        color: $color-h2;
+        text-shadow: 1px 0px 3px $color-textshadow;
+        margin-left: $margin;
+    }
+}
+
+.cards {
+    width: 100%;
+    &--card {
+        background-color: $color-white;
+        border-radius: 15px;
+        max-width: 450px;
+        box-shadow: 0px 16px 66px -20px rgba(0,0,0,1);
+        margin: 5%;
+    }
+    &--card img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 0px 52px 49px -38px rgba(0,0,0,1);
+    }
+    &--card-small {
+        background-color: $color-white;
+        position: relative;
+        margin: -10% 10% 5% 10%;
+        padding: 1% 7% 1% 7%;
+        & p {
+            text-align: left;
+        }
+        & h3 {
+            text-align: center;
+        }
+    }
+}
+

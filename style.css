@@ -38,12 +38,60 @@ nav li {
   align-items: center;
   flex-direction: column;
 }
-.hero .hero--image {
+.hero--image {
   width: 100%;
   display: flex;
   margin-top: 20px;
 }
-.hero .hero--image img {
+.hero--image img {
   width: 22%;
   margin: auto;
+}
+.hero--title {
+  width: 100%;
+}
+.hero--title h1 {
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 0px 3px #240842;
+  font-size: 2.2em;
+}
+
+.experience--title {
+  width: 100%;
+}
+.experience--title h2 {
+  text-transform: uppercase;
+  color: #fec066;
+  text-shadow: 1px 0px 3px #240842;
+  margin-left: 45px;
+}
+
+.cards {
+  width: 100%;
+}
+.cards--card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  max-width: 450px;
+  box-shadow: 0px 16px 66px -20px black;
+  margin: 5%;
+}
+.cards--card img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0px 52px 49px -38px black;
+}
+.cards--card-small {
+  background-color: #ffffff;
+  position: relative;
+  margin: -10% 10% 5% 10%;
+  padding: 1% 7% 1% 7%;
+}
+.cards--card-small p {
+  text-align: left;
+}
+.cards--card-small h3 {
+  text-align: center;
 }
