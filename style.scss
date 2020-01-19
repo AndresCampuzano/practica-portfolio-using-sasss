@@ -1,5 +1,6 @@
 
 $color-purple: #800080;
+$color-lightpurple: #80008033;
 $color-darkpurple: #3b003b;
 $color-h2: #fec066;
 $color-white: #ffffff;
@@ -79,12 +80,16 @@ nav {
 
 .cards {
     width: 100%;
-    &--card {
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+        &--card {
         background-color: $color-white;
         border-radius: 15px;
         max-width: 450px;
         box-shadow: 0px 16px 66px -20px rgba(0,0,0,1);
-        margin: 5%;
+        margin: 1%;
     }
     &--card img {
         width: 100%;
@@ -103,6 +108,21 @@ nav {
         & h3 {
             text-align: center;
         }
+        & input {
+            text-align: center;
+            border: 1px solid $color-purple;
+            background: none;
+            color: $color-purple;
+            border-radius: 8px;
+            font-size: 16px;
+            padding: 2.7%;
+            cursor: pointer;
+            &:hover{
+                background-color: $color-lightpurple;
+            }
+        }
     }
 }
+
+// here
 
