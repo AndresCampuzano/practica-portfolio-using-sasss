@@ -2,6 +2,7 @@
 $color-purple: #800080;
 $color-lightpurple: #80008033;
 $color-darkpurple: #3b003b;
+$color-moredarkpurple: #2e002e;
 $color-h2: #fec066;
 $color-white: #ffffff;
 $color-textshadow: #240842;
@@ -124,5 +125,56 @@ nav {
     }
 }
 
-// here
+.contact {
+    width: 100%;
+    // height: 120px;
+    margin-top: 4.5%;
+    background-color: $color-darkpurple;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--title {
+        width: 100%;
+        & h2 {
+            color: $color-h2;
+            text-transform: uppercase;
+        }
+    }
+    &--input input {
+            border-radius: 12px;
+            padding: 12px;
+            border: none;
+        }
+    &--button input {
+        margin: 10px;
+        border: 1px solid $color-purple;
+        padding: 15px 45px;
+        border-radius: 12px;
+        margin: 25px;
+        background: none;
+        color: $color-white;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-moredarkpurple;
+        }
+    }
 
+    &--social {
+        width: 100%;
+        margin-bottom: 1%;
+        & img {
+            cursor: pointer;
+        }
+    }
+}
+
+.footer--legal {
+    width: 100%;
+    color: $color-white;
+    background-color: $color-moredarkpurple;
+    & p {
+        padding: 20px;
+        margin: 0;
+    }
+}
