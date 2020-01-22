@@ -66,6 +66,9 @@ nav {
         text-align: center;
         text-shadow: 1px 0px 3px $color-textshadow;
         font-size: 2.2em;
+        & a {
+            color: $color-h2;
+        }
     }
 }
 

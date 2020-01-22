@@ -56,6 +56,9 @@ nav li {
   text-shadow: 1px 0px 3px #240842;
   font-size: 2.2em;
 }
+.hero--title h1 a {
+  color: #fec066;
+}
 
 .experience--title {
   width: 100%;
